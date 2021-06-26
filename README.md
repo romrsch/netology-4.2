@@ -2,11 +2,10 @@
 
 Есть скрипт:
 
->#!/usr/bin/env python3
->a = 1
->b = '2'
->c = a + b
-
+```#!/usr/bin/env python3
+a = 1
+b =: '2'
+c = a + b```
 
 - Какое значение будет присвоено переменной c?
 - Как получить для переменной c значение 12?
@@ -58,6 +57,24 @@ for result in result_os.split('\n'):
 и оператор `breake`, который завершает работу цикла `for` после того как найдёт первое "изменение".
 Ещё изменил шаблон поиска `modified` на "изменено", т.к. git в моем случае
 содержит записи на русском языке.
+
+
+```
+#!/usr/bin/env python3
+
+import os
+
+bash_command = ["cd ~/netology/4.2", "git status"]
+
+result_os = os.popen(' && '.join(bash_command)).read()
+
+
+for result in result_os.split('\n'):
+    if result.find('изменено:') != -1:
+        prepare_result = result.replace('\tизменено::   ', '')
+        print(prepare_result)
+
+```
 
  Результат работы скрипта:
 
