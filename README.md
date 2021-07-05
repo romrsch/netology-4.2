@@ -75,12 +75,14 @@ for result in result_os.split('\n'):
 
  Результат работы скрипта:
 
-`user@ubuntu:~/netology/4.2$ python3 2.py`
-`Path GIT:`
-`/home/user/netology/4.2`
-`        изменено:      1.py`
-`        изменено:      2.py`
-`        изменено:      3.py`
+```
+user@ubuntu:~/netology/4.2$ python3 2.py
+Path GIT:
+/home/user/netology/4.2
+        изменено:      1.py
+        изменено:      2.py
+        изменено:      3.py
+```
 
 ---
 ### Задание 3
@@ -120,16 +122,21 @@ for result in result_os.split('\n'):
 print('\033[0m')
 ```
 Результат работы скрипта:
-`user@ubuntu:~/netology/4.2$ python3 3.py`
+```
+user@ubuntu:~/netology/4.2$ python3 3.py
 
-`/home/user/netology/4.2 изменено:1.py`
-`/home/user/netology/4.2 изменено:2.py`
-`/home/user/netology/4.2 изменено:3.py`
+/home/user/netology/4.2 изменено:1.py
+/home/user/netology/4.2 изменено:2.py
+/home/user/netology/4.2 изменено:3.py
+```
+
 
 Если запускаем скрипт в другой директории без контроля версий
-`user@ubuntu:/tmp$ python3 ~/netology/4.2/3.py`
+```
+user@ubuntu:/tmp$ python3 ~/netology/4.2/3.py
 
- `Каталог  /tmp не является GIT репозиторием`
+Каталог  /tmp не является GIT репозиторием
+```
 
 ---
 ### Задание 4
